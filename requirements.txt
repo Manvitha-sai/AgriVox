@@ -1,0 +1,9 @@
+streamlit
+google-generativeai
+gTTS
+Pillow
+requests
+streamlit-lottie
+streamlit-option-menu
+streamlit-cropper
+pandas

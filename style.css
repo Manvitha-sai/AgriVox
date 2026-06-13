@@ -1,0 +1,100 @@
+/* ==========================================
+   AGRIVOX PREMIUM UI DESIGN SYSTEM
+   ========================================== */
+
+/* 1. Import Premium Google Font (Outfit) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+/* 2. Global Typography & Background */
+html, body, [class*="css"] {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+.stApp {
+    background-color: #F8FAF8; /* Ultra-soft organic background */
+}
+
+/* 3. Hide Default Streamlit Clutter */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+[data-testid="stSidebarNav"] {display: none !important;}
+
+/* 4. Beautiful Typography */
+.stApp h1 {
+    color: #0F4C3A;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.stApp h3 {
+    color: #1A5D1A;
+    font-weight: 600;
+}
+.stApp h5 {
+    color: #5C7765;
+    font-weight: 400;
+}
+
+/* 5. Modern Button Styling (Gradient & Hover Lift) */
+.stButton > button {
+    background: linear-gradient(135deg, #1A5D1A 0%, #2D8A4E 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    box-shadow: 0 4px 14px 0 rgba(26, 93, 26, 0.39);
+    transition: all 0.3s ease;
+}
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 93, 26, 0.4);
+    color: white;
+    border: none;
+}
+
+/* 6. The "Dropzone" File Uploader */
+[data-testid="stFileUploader"] {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 2px dashed #A3C9A8;
+    border-radius: 24px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+[data-testid="stFileUploader"]:hover {
+    border-color: #2D8A4E;
+    background-color: #ffffff;
+    box-shadow: 0 15px 35px rgba(45, 138, 78, 0.08);
+    transform: scale(1.01);
+}
+
+/* 7. Soft UI Diagnosis Cards */
+.diagnosis-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+    margin: 20px 0;
+    border-left: 6px solid #1A5D1A;
+    transition: transform 0.2s ease;
+}
+.diagnosis-card:hover {
+    transform: translateY(-3px);
+}
+.diagnosis-card.healthy { border-left-color: #2E8B57; }
+.diagnosis-card.disease { border-left-color: #FF6B6B; } /* Modern Coral Red */
+
+/* 8. Input Fields & Dropdowns */
+.stSelectbox > div > div {
+    border-radius: 12px;
+    border: 1px solid #E0EBE2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+/* 9. Sidebar Glassmorphism */
+[data-testid="stSidebar"] {
+    background-color: rgba(255,255,255,0.95);
+    border-right: 1px solid #EAEFEA;
+}
